@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Hub — Access Required</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Arial,Helvetica,sans-serif;background:#03070b;color:#fff}
+body{background:radial-gradient(circle at 50% 30%,#121a27 0,#05080d 42%,#020307 100%);overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;background:linear-gradient(90deg,#07101a99,#0000 25%,#0000 75%,#07101a99);pointer-events:none}
+header{height:76px;padding:0 28px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #ef183e;background:#05070beF;position:relative;z-index:2}
+.logo{display:flex;align-items:center;gap:10px;font-size:25px;font-weight:900;letter-spacing:.5px}.play{font-size:31px;color:#ff173f}.hub{color:#ff173f}
+.top{font-size:15px;color:#ddd}.yt{display:inline-block;background:#ff163d;border-radius:9px;padding:8px 11px;margin-right:8px}
+.wrap{max-width:980px;margin:auto;padding:48px 18px 35px;text-align:center;position:relative;z-index:1}
+.brandIcon{font-size:55px;margin-bottom:10px}
+h1{font-size:48px;margin:0 0 12px;font-weight:900;letter-spacing:1px}.red{color:#ff183f}
+.tag{color:#b9c0cb;font-size:16px;line-height:1.5;margin:auto;max-width:620px}
+.gate{max-width:710px;margin:30px auto 0;border:1px solid #ff183f;border-radius:24px;background:linear-gradient(145deg,#070d14eF,#07070cF);box-shadow:0 0 50px #ff123b18;padding:28px}
+.lock{width:58px;height:58px;margin:-58px auto 15px;border:1px solid #ff183f;border-radius:50%;background:#070a0f;display:grid;place-items:center;font-size:27px}
+h2{font-size:28px;margin:4px 0 10px}.channel{margin:24px 0;border:1px solid #26303c;border-radius:17px;padding:18px;display:flex;align-items:center;text-align:left;background:#05080d}
+.avatar{width:74px;height:74px;border-radius:50%;border:2px solid #ff183f;display:grid;place-items:center;font-weight:900;margin-right:17px;background:#111820;font-size:13px;text-align:center}
+.channel b{font-size:19px}.handle{color:#adb5c2;margin-top:7px}.meta{font-size:12px;color:#7f8997;margin-top:7px}
+button{width:100%;padding:18px;border:0;border-radius:14px;background:linear-gradient(90deg,#ff123c,#ff304f);color:#fff;font-size:19px;font-weight:900;cursor:pointer;box-shadow:0 10px 30px #ff123b35}
+.small{font-size:12px;color:#7d8794;margin-top:12px}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:28px;border:1px solid #26303c;border-radius:15px;overflow:hidden}
+.feature{padding:18px 8px;background:#05080d}.ico{font-size:22px;margin-bottom:7px}.feature span{display:block;color:#c6ccd5;font-size:12px}
+footer{color:#606977;font-size:12px;padding:25px}
+@media(max-width:650px){header{padding:0 15px}.top{font-size:12px}.wrap{padding-top:35px}h1{font-size:34px}.tag{font-size:14px}.gate{padding:22px 15px}.features{grid-template-columns:repeat(2,1fr)}.channel{padding:14px}.avatar{width:62px;height:62px;min-width:62px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo"><span class="play">▶</span> MOVIE <span class="hub">HUB</span></div>
+  <div class="top"><span class="yt">▶</span> Subscribe &amp; Get Access</div>
+</header>
+
+<section class="wrap">
+  <div class="brandIcon">🎬</div>
+  <h1>MOVIE <span class="red">HUB</span></h1>
+  <div class="tag">PREMIUM MOVIES &nbsp;•&nbsp; WEB SERIES &nbsp;•&nbsp; ENTERTAINMENT</div>
+
+  <div class="gate">
+    <div class="lock">🔒</div>
+    <h2>ACCESS <span class="red">REQUIRED</span></h2>
+    <p class="tag">To continue watching movies, please subscribe to our YouTube channel first.</p>
+
+    <div class="channel">
+      <div class="avatar">FUNNY<br>JUNCTION<br>▶</div>
+      <div>
+        <b>Our YouTube Channel</b>
+        <div class="handle">@funnyjunction_yt</div>
+        <div class="meta">Movies &nbsp;•&nbsp; Web Series &nbsp;•&nbsp; Entertainment</div>
+      </div>
+    </div>
+
+    <button onclick="window.open('https://youtube.com/@funnyjunction_yt','_blank')">▶ &nbsp; SUBSCRIBE</button>
+    <div class="small">Subscribe to our channel to access Movie Hub.</div>
+
+    <div class="features">
+      <div class="feature"><div class="ico">🎞️</div><span>High Quality<br>Streaming</span></div>
+      <div class="feature"><div class="ico">🛡️</div><span>Safe &amp; Secure<br>Access</span></div>
+      <div class="feature"><div class="ico">⚡</div><span>Latest Movies<br>&amp; Web Series</span></div>
+      <div class="feature"><div class="ico">🎧</div><span>24/7<br>Support</span></div>
+    </div>
+  </div>
+</section>
+<footer>🎬 MOVIE <span class="red">HUB</span> &nbsp; • &nbsp; Thank you for supporting our channel ❤️</footer>
+</body>
+</html>
