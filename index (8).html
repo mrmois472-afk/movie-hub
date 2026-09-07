@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movie Hub</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#090909;color:#fff}
+.gate{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:20px;background:radial-gradient(circle at center,#321010,#090909 55%)}
+.box{text-align:center;max-width:430px;width:100%;padding:42px 25px;border:1px solid #4a2020;border-radius:22px;background:#111;box-shadow:0 20px 70px #000}
+.logo{font-size:32px;font-weight:800}.red{color:#e50914}.lock{font-size:52px;margin:20px}.small{color:#aaa}
+.btn{display:inline-block;margin-top:18px;padding:14px 28px;border-radius:10px;background:#e50914;color:white;text-decoration:none;font-weight:bold;border:0;cursor:pointer}
+.home{display:none}.nav{padding:18px 5%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #222;position:sticky;top:0;background:#090909ee;z-index:2}
+.nav a{color:#aaa;text-decoration:none;margin-left:18px}
+.hero{margin:30px 5%;padding:60px 6%;border-radius:22px;background:linear-gradient(90deg,#180707,#111 55%,#301010);min-height:330px}
+.hero h1{font-size:46px;margin:10px 0}.hero p{max-width:600px;color:#ccc;line-height:1.6}
+.section{padding:10px 5% 30px}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#151515;border-radius:14px;overflow:hidden}.poster{width:100%;height:250px;object-fit:cover;display:block}
+.info{padding:14px}.info h3{margin:0 0 7px}.meta{color:#999;font-size:13px}
+.player{display:none;margin:20px 5%;background:#111;padding:18px;border-radius:16px}
+.player iframe{width:100%;height:500px;border:0;border-radius:12px}
+@media(max-width:700px){.nav a{display:none}.hero{min-height:330px;padding:35px 25px}.hero h1{font-size:34px}.cards{grid-template-columns:repeat(2,1fr)}.poster{height:210px}.player iframe{height:230px}}
+</style>
+</head>
+<body>
+
+<div id="gate" class="gate">
+  <div class="box">
+    <div class="logo">MOVIE <span class="red">HUB</span></div>
+    <div class="lock">🔒</div>
+    <h2>ACCESS REQUIRED</h2>
+    <p class="small">Subscribe to our YouTube channel to continue to Movie Hub.</p>
+    <a class="btn" href="https://youtube.com/@funnyjunction_yt" target="_blank" onclick="goHome()">SUBSCRIBE</a>
+  </div>
+</div>
+
+<div id="home" class="home">
+  <div class="nav">
+    <div class="logo">MOVIE <span class="red">HUB</span></div>
+    <div><a href="#">Home</a><a href="#">Movies</a><a href="#">Genres</a><a href="#">About</a></div>
+  </div>
+
+  <section class="hero">
+    <div><div class="red">FEATURED MOVIE</div><h1>Movie Hub</h1>
+    <p>Explore movies and entertainment on Movie Hub.</p></div>
+  </section>
+
+  <section class="section">
+    <h2>Latest Movies</h2>
+    <div class="cards">
+      <div class="card">
+        <img class="poster" src="dhoondte-reh-jaoge.jpg" alt="Dhoondte Reh Jaoge thumbnail">
+        <div class="info">
+          <h3>Dhoondte Reh Jaoge</h3>
+          <div class="meta">Hindi • Comedy • Full HD (720p)</div>
+          <button class="btn" onclick="watchMovie()">WATCH NOW</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="player" class="player">
+    <h2>Dhoondte Reh Jaoge</h2>
+    <iframe src="https://drive.google.com/file/d/1q-bKy5KWJT58-ZvmX5nhjsbQ2XCORshM/preview" allow="autoplay"></iframe>
+  </div>
+
+  <footer class="section" style="border-top:1px solid #222;color:#888">
+    © 2026 Movie Hub • Licensed content only
+  </footer>
+</div>
+
+<script>
+function goHome(){
+  setTimeout(function(){
+    document.getElementById('gate').style.display='none';
+    document.getElementById('home').style.display='block';
+    window.scrollTo(0,0);
+  },700);
+}
+function watchMovie(){
+  document.getElementById('player').style.display='block';
+  document.getElementById('player').scrollIntoView({behavior:'smooth'});
+}
+</script>
+</body>
+</html>
